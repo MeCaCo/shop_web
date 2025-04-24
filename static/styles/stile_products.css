@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a7ff7e;
+}
+
+h1 {
+    text-align: left;
+    color: #4625ff;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.image-container img {
+    max-width: min(500px, 50%);     /* меньшее из: 800px или 90% */
+    max-height: min(500px, 50%);    /* меньшее из: 600px или 80vh */
+    object-fit: contain;
+}
+
+.description {
+    display: grid;
+    place-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #543cdb;     
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+/* Контейнер для всего блока */
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Контейнер для количества */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Стили для кнопок +/- */
+.quantity-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.quantity-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Стили для поля ввода количества */
+.quantity-input {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Убираем стрелки у input number */
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Кнопка Купить */
+.buy-btn {
+    padding: 12px 40px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+

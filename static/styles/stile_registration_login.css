@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a7ff7e;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.registration_login {
+    text-align: center;
+    border: 1px solid #000000;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #70c673;
+}
+
+h1 {
+    text-align: left;
+    color: #4625ff;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
